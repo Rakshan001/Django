@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'hello',
+    'newyear',
+    'tasks',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +57,10 @@ ROOT_URLCONF = 'Django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS':[r'newyear\template'],
+        'DIRS': [r'C:\Users\Asus\OneDrive\Desktop\Immortal\CS50(Django2)\Django\Django\hello\template',
+r'C:\Users\Asus\OneDrive\Desktop\Immortal\CS50(Django2)\Django\Django\newyear\template',],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
